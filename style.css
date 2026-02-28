@@ -362,3 +362,47 @@ footer {
   padding: 40px;
 }
 
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 25px;
+}
+
+.social-btn {
+  position: relative;
+  text-decoration: none;
+  color: #f5d76e;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  transition: 0.3s ease;
+}
+
+/* Animated Underline */
+.social-btn::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(45deg, #d4af37, #f5d76e);
+  transition: width 0.3s ease;
+}
+
+.social-btn:hover::after {
+  width: 100%;
+}
+
+/* Glow Hover Effect */
+.social-btn:hover {
+  transform: translateY(-3px);
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.6);
+}
+
+/* Icon Styling */
+.social-btn i {
+  font-size: 1.1rem;
+}
