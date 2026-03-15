@@ -423,12 +423,18 @@ footer {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  transition: transform 0.35s, box-shadow 0.35s;
+  height: 100%;
 }
 
 /* Button container at bottom */
 .project-btn {
-  margin-top: 20px;
+  margin-top: auto;
   text-align: center;
   padding-top: 20px;
 }
