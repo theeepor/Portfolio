@@ -428,7 +428,7 @@ footer {
 
 /* Button container at bottom */
 .project-btn {
-  margin-top: auto;
+  margin-top: 20px;
   text-align: center;
   padding-top: 20px;
 }
